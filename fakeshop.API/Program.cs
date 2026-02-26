@@ -18,6 +18,14 @@ builder.Services.AddAutoMapper(cfg => {
     cfg.AddProfile<MappingProfiles>();
 });
 
+builder.Services.AddCors(options => {
+    options.AddDefaultPolicy(policy => {
+        policy.WithOrigins("http://localhost:3000") // origem do React
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 if(app.Environment.IsDevelopment()) {
@@ -29,7 +37,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles(); // necessário para arquivos wwwroot
 
 app.UseRouting();
-
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllers();

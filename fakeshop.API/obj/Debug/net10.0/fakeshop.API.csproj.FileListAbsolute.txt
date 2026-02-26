@@ -89,7 +89,6 @@ C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net1
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\fakeshop.API.dll
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\refint\fakeshop.API.dll
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\fakeshop.API.pdb
