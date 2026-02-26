@@ -228,3 +228,5 @@ C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\bin\Debug\net1
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\compressed\eq9noojomy-{0}-3qln13e5cx-3qln13e5cx.gz
+C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\bin\Debug\net10.0\AutoMapper.dll
+C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\obj\Debug\net10.0\fakeshop.API.sourcelink.json

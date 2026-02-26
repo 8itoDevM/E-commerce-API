@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\data\\fakeshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D471ADED-C0F7-4604-A378-9EC4575C4F87}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\data\\fakeshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "fakeshop.API\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "fakeshop.API\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-25T01:12:14.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "fakeshop.API\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "fakeshop.API\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-25T01:12:06.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "fakeshop.API\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "fakeshop.API\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:40:22.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\SQLProductRepository.cs",
+              "RelativeDocumentMoniker": "fakeshop.API\\Repositories\\SQLProductRepository.cs",
+              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\SQLProductRepository.cs",
+              "RelativeToolTip": "fakeshop.API\\Repositories\\SQLProductRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:35:02.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "fakeshop.API\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "fakeshop.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T00:40:25.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FakeShopDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Data\\FakeShopDbContext.cs",
-              "RelativeDocumentMoniker": "fakeshop.API\\Data\\FakeShopDbContext.cs",
-              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Data\\FakeShopDbContext.cs",
-              "RelativeToolTip": "fakeshop.API\\Data\\FakeShopDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T00:12:35.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Program.cs",
               "RelativeDocumentMoniker": "fakeshop.API\\Program.cs",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Program.cs",
               "RelativeToolTip": "fakeshop.API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T00:03:29.192Z",
               "EditorCaption": ""

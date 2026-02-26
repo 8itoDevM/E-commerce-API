@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "fakeshop.API.Controllers.ProductsController",
-    "Method": "GetAll",
+    "Method": "GetAllAsync",
     "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,

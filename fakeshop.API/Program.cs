@@ -1,4 +1,6 @@
 using fakeshop.API.Data;
+using fakeshop.API.Mappings;
+using fakeshop.API.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("FakeShopConnectionString")));
+
+builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
+
+builder.Services.AddAutoMapper(cfg => {
+    cfg.AddProfile<MappingProfiles>();
+});
 
 var app = builder.Build();
 

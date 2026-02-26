@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,7 +61,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
+C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\css\site.css
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\favicon.ico
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\js\site.js
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -122,4 +123,3 @@ C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\lib\jq
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\8ito\Documents\aspnetapis\FakeShop\fakeshop\fakeshop.API\wwwroot\css\site.css
