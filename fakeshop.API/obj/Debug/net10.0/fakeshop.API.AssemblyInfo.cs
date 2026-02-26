@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65a1adc2362783ef77a4f03bc8685df3b7ee3bdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+676d9cf7ad327e51d32b3320827350e2e524788f")]
 [assembly: System.Reflection.AssemblyProductAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

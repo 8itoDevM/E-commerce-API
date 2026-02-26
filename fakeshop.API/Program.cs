@@ -5,18 +5,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Configuration.AddEnvironmentVariables();
+
+var connectionString = builder.Configuration["FAKESHOP_CONNECTIONSTRING"];
+if(string.IsNullOrEmpty(connectionString)) {
+    throw new InvalidOperationException("Connection string não encontrada. Configure a variável de ambiente FAKESHOP_CONNECTIONSTRING.");
+}
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("FakeShopConnectionString")));
-
+    options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
-
-builder.Services.AddAutoMapper(cfg => {
-    cfg.AddProfile<MappingProfiles>();
-});
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfiles>());
 
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(policy => {
@@ -34,7 +35,7 @@ if(app.Environment.IsDevelopment()) {
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // necessário para arquivos wwwroot
+app.UseStaticFiles();
 
 app.UseRouting();
 app.UseCors();
