@@ -5,17 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Configuration.AddEnvironmentVariables();
+var connectionString = builder.Configuration["ConnectionStrings:FakeShopConnectionString"];
 
-var connectionString = builder.Configuration["FAKESHOP_CONNECTIONSTRING"];
 if(string.IsNullOrEmpty(connectionString)) {
-    throw new InvalidOperationException("Connection string não encontrada. Configure a variável de ambiente FAKESHOP_CONNECTIONSTRING.");
+    throw new InvalidOperationException("Connection string não configurada.");
 }
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
     options.UseSqlServer(connectionString));
+
 builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfiles>());
 
@@ -36,13 +37,10 @@ if(app.Environment.IsDevelopment()) {
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 app.UseCors();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
