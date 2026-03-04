@@ -23,8 +23,6 @@ namespace fakeshop.API.Controllers {
         public async Task<IActionResult> GetAllAsync() {
             var products = await productRepository.GetallAsync();
 
-            //var productsDto = ;
-
             return Ok(mapper.Map<List<ProductDto>>(products));
         }
     }

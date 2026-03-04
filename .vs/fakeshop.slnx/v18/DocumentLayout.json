@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\data\\fakeshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\data\\fakeshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|c:\\users\\8ito\\documents\\aspnetapis\\fakeshop\\fakeshop\\fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9688E3D-3591-2850-48A4-B4A22C573E67}|fakeshop.API\\fakeshop.API.csproj|solutionrelative:fakeshop.api\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "fakeshop.API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "fakeshop.API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:13:24.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FakeShopDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Data\\FakeShopDbContext.cs",
+              "RelativeDocumentMoniker": "fakeshop.API\\Data\\FakeShopDbContext.cs",
+              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Data\\FakeShopDbContext.cs",
+              "RelativeToolTip": "fakeshop.API\\Data\\FakeShopDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T02:44:42.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\appsettings.json",
               "RelativeDocumentMoniker": "fakeshop.API\\appsettings.json",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\appsettings.json",
               "RelativeToolTip": "fakeshop.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-02-26T20:05:03.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "fakeshop.API\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Properties\\launchSettings.json",
               "RelativeToolTip": "fakeshop.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-26T19:18:55.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T19:18:55.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "fakeshop.API\\Repositories\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\IProductRepository.cs",
-              "RelativeToolTip": "fakeshop.API\\Repositories\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T18:40:22.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Program.cs",
               "RelativeDocumentMoniker": "fakeshop.API\\Program.cs",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Program.cs",
               "RelativeToolTip": "fakeshop.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T00:03:29.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "SQLProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\SQLProductRepository.cs",
               "RelativeDocumentMoniker": "fakeshop.API\\Repositories\\SQLProductRepository.cs",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Repositories\\SQLProductRepository.cs",
               "RelativeToolTip": "fakeshop.API\\Repositories\\SQLProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T18:35:02.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T18:35:02.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "fakeshop.API\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\8ito\\Documents\\aspnetapis\\FakeShop\\fakeshop\\fakeshop.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "fakeshop.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T00:40:25.871Z",
               "EditorCaption": ""
