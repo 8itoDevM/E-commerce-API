@@ -4,17 +4,35 @@ import "./App.css";
 function App() {
 
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+
+  const pageSize = 10;
 
   useEffect(() => {
-    fetch("http://localhost:5062/api/products")
+    setLoading(true);
+
+    fetch(`http://localhost:5062/api/products?pN=${page}&pS=${pageSize}`)
       .then(res => res.json())
       .then(data => {
         setProducts(data);
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  }, []);
+
+  }, [page]);
+
+  const goNext = () => {
+    if (products.length === pageSize) {
+      setPage(prev => prev + 1);
+    }
+  };
+
+  const goPrevious = () => {
+    if (page > 1) {
+      setPage(prev => prev - 1);
+    }
+  };
 
   return (
     <div className="app">
@@ -38,40 +56,57 @@ function App() {
         {loading ? (
           <h2 className="loading">Loading products...</h2>
         ) : (
-          <div className="products-grid">
-            {products.map(product => (
-              <div key={product.id} className="card">
-                <div className="image-wrapper">
-                  <img
-                    src={product.productImageUrl}
-                    alt={product.name}
-                  />
+          <>
+            <div className="products-grid">
+              {products.map(product => (
+                <div key={product.id} className="card">
+                  <div className="image-wrapper">
+                    <img
+                      src={product.productImageUrl}
+                      alt={product.name}
+                    />
+                  </div>
+
+                  <div className="card-body">
+                    <h3>{product.name}</h3>
+                    <p className="price">
+                      ${product.price.toFixed(2)}
+                    </p>
+                    <p className="vendor">
+                      {product.vendor?.name}
+                    </p>
+                    <button className="btn">
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
+              ))}
+            </div>
 
-                <div className="card-body">
-                  <h3>{product.name}</h3>
+            <div className="pagination">
+              <button
+                onClick={goPrevious}
+                disabled={page === 1}
+              >
+                ← Previous
+              </button>
 
-                  <p className="price">
-                    ${product.price.toFixed(2)}
-                  </p>
+              <span>Page {page}</span>
 
-                  <p className="vendor">
-                    {product.vendor?.name}
-                  </p>
-
-                  <button className="btn">
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+              <button
+                onClick={goNext}
+                disabled={products.length < pageSize}
+              >
+                Next →
+              </button>
+            </div>
+          </>
         )}
 
       </main>
 
       <footer className="footer">
-        © 2026 FakeShop — Backend Focused E-Commerce Study Project
+        © 2026 FakeShop — Study Project
       </footer>
 
     </div>

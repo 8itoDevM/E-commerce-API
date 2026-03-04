@@ -20,8 +20,8 @@ namespace fakeshop.API.Controllers {
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync() {
-            var products = await productRepository.GetallAsync();
+        public async Task<IActionResult> GetAllAsync([FromQuery] int pN = 1, [FromQuery] int pS = 10) {
+            var products = await productRepository.GetallAsync(pN, pS);
 
             return Ok(mapper.Map<List<ProductDto>>(products));
         }
