@@ -13,13 +13,17 @@ namespace fakeshop.API.Repositories {
 
         public FakeShopDbContext DbContext { get; }
 
-        public async Task<List<Product>> GetallAsync(int pN = 1, int pS = 10) {
+        public async Task<(List<Product> Items, int totalCount)> GetallAsync(int pN = 1, int pS = 10) {
             var pro = dbContext.Products
                 .Include(p => p.Vendor).AsQueryable();
 
+            int totalCount = await pro.CountAsync();
+
             var skipResults = (pN - 1) * pS;
 
-            return await pro.Skip(skipResults).Take(pS).ToListAsync();
+            var items = await pro.Skip(skipResults).Take(pS).ToListAsync();
+
+            return (items, totalCount);
         }
     }
 }
