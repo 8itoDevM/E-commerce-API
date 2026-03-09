@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace fakeshop.API.Controllers {
     [Route("api/[controller]")]
@@ -20,6 +21,7 @@ namespace fakeshop.API.Controllers {
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllAsync([FromQuery] int pN = 1, [FromQuery] int pS = 10) {
             var (products, totalCount) = await productRepository.GetallAsync(pN, pS);
 

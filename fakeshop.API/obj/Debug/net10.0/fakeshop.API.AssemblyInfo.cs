@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee2aa649b47cb23f5b8bfe36e0e908d98b1e2249")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77fc30d3bbf77b210b4d4c3a78c259adb713c6e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fakeshop.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
