@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.IdentityModel.Tokens.Experimental;
+using Microsoft.OpenApi;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,8 +18,26 @@ if(string.IsNullOrEmpty(connectionString)) {
     throw new InvalidOperationException("Connection string não configurada.");
 }
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddControllersWithViews();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options => {
+    options.SwaggerDoc("v1", new OpenApiInfo {
+        Title = "E-commerce API",
+        Version = "v1"
+    });
+
+    options.AddSecurityDefinition("bearer", new OpenApiSecurityScheme {
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Description = "Paste your JWT token here"
+    });
+
+    options.AddSecurityRequirement(document => new OpenApiSecurityRequirement {
+        [new OpenApiSecuritySchemeReference("bearer", document)] = []
+    });
+});
 
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
     options.UseSqlServer(connectionString));

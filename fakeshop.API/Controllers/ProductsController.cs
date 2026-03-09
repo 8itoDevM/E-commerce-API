@@ -21,7 +21,7 @@ namespace fakeshop.API.Controllers {
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Manager,Employee,User")]
         public async Task<IActionResult> GetAllAsync([FromQuery] int pN = 1, [FromQuery] int pS = 10) {
             var (products, totalCount) = await productRepository.GetallAsync(pN, pS);
 
