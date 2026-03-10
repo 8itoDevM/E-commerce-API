@@ -1,4 +1,5 @@
 ﻿using fakeshop.API.Models.DTO;
+using fakeshop.API.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,9 +9,11 @@ namespace fakeshop.API.Controllers {
     [ApiController]
     public class AuthController : ControllerBase {
         private readonly UserManager<IdentityUser> userManager;
+        private readonly ITokenRepository tokenRepository;
 
-        public AuthController(UserManager<IdentityUser> userManager) {
+        public AuthController(UserManager<IdentityUser> userManager, ITokenRepository tokenRepository) {
             this.userManager = userManager;
+            this.tokenRepository = tokenRepository;
         }
 
         [HttpPost]
@@ -34,6 +37,29 @@ namespace fakeshop.API.Controllers {
             }
 
             return BadRequest("Couldn't create user");
+        }
+
+        [HttpPost]
+        [Route("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequest) {
+            var user = await userManager.FindByEmailAsync(loginRequest.Email);
+            
+            if(user != null) {
+                var checkPassword = await userManager.CheckPasswordAsync(user, loginRequest.Password);
+
+                if(checkPassword) {
+                    var roles = await userManager.GetRolesAsync(user);
+                    
+                    var jwtToken = tokenRepository.CreateJWTToken(user, roles.ToList());
+
+                    var res = new LoginResponseDto {
+                        JwtToken = jwtToken
+                    };
+
+                    return Ok(res);
+                }
+            }
+            return BadRequest("Username or password incorrect");
         }
     }
 }

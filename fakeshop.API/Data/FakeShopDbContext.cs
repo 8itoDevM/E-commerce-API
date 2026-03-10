@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace fakeshop.API.Data {
     public class FakeShopDbContext : DbContext{
-        public FakeShopDbContext(DbContextOptions options) : base(options) {
+        public FakeShopDbContext(DbContextOptions<FakeShopDbContext> options) : base(options) {
         }
 
         public DbSet<Product> Products {  get; set; }

@@ -46,6 +46,7 @@ builder.Services.AddDbContext<FakeShopAuthDbContext>(options =>
     options.UseSqlServer(authConnectionString));
 
 builder.Services.AddScoped<IProductRepository, SQLProductRepository>();
+builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfiles>());
 
 builder.Services.AddCors(options => {
