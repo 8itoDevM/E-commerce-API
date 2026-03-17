@@ -39,6 +39,10 @@ builder.Services.AddSwaggerGen(options => {
     });
 });
 
+builder.Services.AddApiVersioning(options => {
+    options.AssumeDefaultVersionWhenUnspecified = true;
+});
+
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
     options.UseSqlServer(connectionString));
 

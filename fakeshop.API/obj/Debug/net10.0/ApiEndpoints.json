@@ -33,7 +33,28 @@
   },
   {
     "ContainingType": "fakeshop.API.Controllers.ProductsController",
-    "Method": "GetAllAsync",
+    "Method": "GetAllAsyncV1",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pN",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pS",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fakeshop.API.Controllers.ProductsController",
+    "Method": "GetAllAsyncV2",
     "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,

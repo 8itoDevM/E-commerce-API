@@ -19,7 +19,7 @@ function App() {
 
     setLoading(true);
 
-    fetch(`http://localhost:5062/api/products?pN=${page}`, {
+    fetch(`http://localhost:5062/api/v1/products?pN=${page}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
