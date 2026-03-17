@@ -1,14 +1,23 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "E-commerce API",
-    "version": "v1"
+    "title": "Versioned API",
+    "version": "1.0"
   },
   "paths": {
     "/api/Auth/Register": {
       "post": {
         "tags": [
           "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -41,6 +50,15 @@
         "tags": [
           "Auth"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -67,7 +85,7 @@
         }
       }
     },
-    "/api/Products": {
+    "/api/v1/Products": {
       "get": {
         "tags": [
           "Products"

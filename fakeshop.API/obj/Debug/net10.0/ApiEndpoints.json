@@ -11,6 +11,11 @@
         "Name": "loginRequest",
         "Type": "fakeshop.API.Models.DTO.LoginRequestDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -27,6 +32,11 @@
         "Name": "registerRequest",
         "Type": "fakeshop.API.Models.DTO.RegisterRequestDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -34,7 +44,7 @@
   {
     "ContainingType": "fakeshop.API.Controllers.ProductsController",
     "Method": "GetAllAsyncV1",
-    "RelativePath": "api/Products",
+    "RelativePath": "api/v1/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -55,7 +65,7 @@
   {
     "ContainingType": "fakeshop.API.Controllers.ProductsController",
     "Method": "GetAllAsyncV2",
-    "RelativePath": "api/Products",
+    "RelativePath": "api/v2/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

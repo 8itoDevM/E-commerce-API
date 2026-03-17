@@ -1,8 +1,10 @@
+using fakeshop.API;
 using fakeshop.API.Data;
 using fakeshop.API.Mappings;
 using fakeshop.API.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.IdentityModel.Tokens.Experimental;
@@ -22,11 +24,6 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen(options => {
-    options.SwaggerDoc("v1", new OpenApiInfo {
-        Title = "E-commerce API",
-        Version = "v1"
-    });
-
     options.AddSecurityDefinition("bearer", new OpenApiSecurityScheme {
         Type = SecuritySchemeType.Http,
         Scheme = "bearer",
@@ -41,6 +38,13 @@ builder.Services.AddSwaggerGen(options => {
 
 builder.Services.AddApiVersioning(options => {
     options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
+    options.ReportApiVersions = true;
+});
+
+builder.Services.AddVersionedApiExplorer(options => {
+    options.GroupNameFormat = "'v'VVV";
+    options.SubstituteApiVersionInUrl = true;
 });
 
 builder.Services.AddDbContext<FakeShopDbContext>(options =>
@@ -89,11 +93,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     });
 
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
+
 var app = builder.Build();
+
+var versionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
 if(app.Environment.IsDevelopment()) {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options => {
+        foreach(var descriptions in versionDescriptionProvider.ApiVersionDescriptions) {
+            options.SwaggerEndpoint($"/swagger/{descriptions.GroupName}/swagger.json",
+                descriptions.GroupName.ToUpperInvariant());
+        }
+    });
 }
 
 app.UseHttpsRedirection();
